@@ -1,0 +1,18 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.feature-section {
+
+    background-image: url(../../assets/images/blue_ellipse.svg);
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: right 25px top 0;
+    padding-bottom: $feature-section-padding-bottom;
+
+    margin-top: $feature-section-margin-top;
+
+    .feature-heading {
+
+        margin-bottom: $feature-heading-margin-bottom;
+    }
+}

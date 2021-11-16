@@ -1,0 +1,19 @@
+{
+  "name": "thehappinesssubscriptionv1",
+  "version": "1.0.0",
+  "description": "Landing page for The Happiness Subscription ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "author": "WHealth UG",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "bootstrap": "^5.1.3",
+    "postcss-cli": "^9.0.2"
+  }
+}

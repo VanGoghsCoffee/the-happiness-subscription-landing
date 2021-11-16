@@ -1,0 +1,14 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+$feature-padding-top: 20px;
+$feature-padding-horizontal: 20px;
+$feature-padding-bottom: 30px;
+
+.feature {
+    text-align: center;
+    @include borderRadiusSTD;
+    @include darkShadow;
+    background-color: $white;
+    padding: $feature-padding-top $feature-padding-horizontal $feature-padding-bottom $feature-padding-horizontal;
+}

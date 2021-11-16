@@ -1,0 +1,26 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+$button-padding-vertical: 11px;
+$button-padding-horizontal: 19px;
+
+.btn-arrow {
+
+    &::before {
+        content: url(../../assets/images/white_arrow.svg);
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    background-color: $blue;
+    @include dropShadow;
+    color: $white; 
+    padding: $button-padding-vertical $button-padding-horizontal;
+    font-size: $button-arrow-font-size;
+    font-weight: $button-arrow-font-weight;
+    line-height: $button-arrow-line-height;
+
+    &:hover {
+        color: $white;
+    }
+}
