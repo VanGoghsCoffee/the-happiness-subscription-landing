@@ -1,0 +1,8 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.cta-section {
+    background-color: rgba($blue-300, .2);
+    padding-top: $cta-section-padding-top;
+    padding-bottom: $cta-section-padding-bottom;
+}

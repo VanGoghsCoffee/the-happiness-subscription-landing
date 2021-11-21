@@ -1,7 +1,7 @@
 $white:    #fff;
 $gray-100: #F4F5F7;
 $gray-200: #EEEFF4;
-$gray-300: #969BAB;
+$gray-300: #D9DBE1;
 $gray-700: #969BAB;
 $gray-800: #474A57;
 $gray-900: #18191F;
@@ -15,6 +15,18 @@ $blue-500: #5CB8FF;
 $blue-400: #85CAFF;
 $blue-300: #AEDCFF;
 
+$red:      #F02B0C;
+$red-600:  #C4230A;
+$red-500:  $red;
+$red-400:  #F54B30;
+$red-300:  #F76D57;
+
+$green:     #0BB84D;
+$green-600: #088D3B;
+$green-500:   $green;
+$green-400: #0DDE5D;
+$green-300: #23F272;
+
 $font-family-sans-serif: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-serif: 'Playfair Display', serif;
 
@@ -26,14 +38,22 @@ $h4-font-size:   $font-size-base * 1.5;
 $h5-font-size:   $font-size-base * 1.25;
 $h6-font-size:   $font-size-base * 1.125;
 
-$button-arrow-font-size : $font-size-base * 1.25;
-$button-arrow-line-height: 1.5;
-$button-arrow-font-weight: 500;
+$button-font-size : $font-size-base * 1.25;
+$button-line-height: 1.5;
+$button-font-weight: 500;
 
 $headings-font-family:        $font-family-serif;
 $headings-font-weight:        700;
 $headings-line-height:        1.5;
 $headings-color:              $gray-900;
+
+$input-bg: $gray-100;
+$input-color: $gray-900;
+$input-border-color: $gray-300;
+$input-padding-y: 16px;
+$input-padding-x: 15px;
+$input-font-family: $font-family-sans-serif;
+$input-font-size: $font-size-base * 0.875;
 
 // scss-docs-start display-headings
 $display-font-sizes: (
@@ -71,6 +91,9 @@ $feature-heading-margin-bottom: 69px;
 $footer-padding-bottom: 50px;
 $footer-padding-top: 50px;
 
+$cta-section-padding-top: 100px;
+$cta-section-padding-bottom: 100px;
+
 $lead-1-font-size: $font-size-base * 1.125;
 $lead-1-font-weight: 400;
 $lead-1-line-height: 1.5;
@@ -91,6 +114,16 @@ $link-row-margin-top: 19px;
 .display-4 {
   font-family: $font-family-sans-serif;
   font-weight: 700;
+}
+
+.required {
+  color: $red;
+  font-weight: 900;
+  font-size: $font-size-base * 0.75;
+  line-height: 1.5;
+  display: inline-block;
+  position: absolute;
+  margin-top: -2px;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

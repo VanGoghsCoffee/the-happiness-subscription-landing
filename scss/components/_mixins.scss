@@ -12,9 +12,20 @@
     border-radius: 3px;
 }
 
+@mixin rightBorderRadiusSTD {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;;
+}
+
 @mixin fontLabelSmall {
     font-family: $font-label-small-familiy;
     font-weight: $font-label-small-weight;
     font-size: $font-label-small-size;
     line-height: $font-label-small-line-height;
+}
+
+@mixin buttonFont {
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    line-height: $button-line-height;
 }

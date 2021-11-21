@@ -3,6 +3,9 @@
 
 $button-padding-vertical: 11px;
 $button-padding-horizontal: 19px;
+$btn-price-selection-padding-vertical: 5px;
+$btn-price-selection-padding-left: 30px;
+$btn-price-selection-padding-right: 5px;
 
 .btn-arrow {
 
@@ -14,13 +17,46 @@ $button-padding-horizontal: 19px;
 
     background-color: $blue;
     @include dropShadow;
+    @include buttonFont;
     color: $white; 
     padding: $button-padding-vertical $button-padding-horizontal;
-    font-size: $button-arrow-font-size;
-    font-weight: $button-arrow-font-weight;
-    line-height: $button-arrow-line-height;
 
     &:hover {
         color: $white;
     }
+}
+
+.btn-submit {
+    background-color: $blue;
+    padding: $button-padding-vertical $button-padding-horizontal;
+    @include buttonFont;
+    color: $white; 
+}
+
+.btn-price-selection {
+
+    @include fontLabelSmall;
+    font-size: $font-size-base * 0.75;
+    background-color: $gray-200;
+    background-image: url(../../assets/images/btn-not-checked.png);
+    background-repeat: no-repeat;
+    background-position: center left 8px;
+    border-color: $gray-300;
+    padding: $btn-price-selection-padding-vertical $btn-price-selection-padding-right $btn-price-selection-padding-vertical $btn-price-selection-padding-left;
+
+    &::before {
+        content: "€ ";
+    }
+
+    &::after {
+        content: "\a / month";
+        white-space: pre;
+    }
+}
+
+.btn-check:checked+.btn-price-selection {
+    
+    background-color: rgba($green-500, .3);
+    border-color: $green-500;
+    background-image: url(../../assets/images/circle_check.svg);
 }

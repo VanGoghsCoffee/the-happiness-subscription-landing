@@ -2,8 +2,10 @@
 
 @use 'components/buttons';
 @use 'components/feature';
+@use 'components/signup';
 
 @use 'sections/navbar';
 @use 'sections/hero';
 @use 'sections/features';
+@use 'sections/cta';
 @use 'sections/footer';

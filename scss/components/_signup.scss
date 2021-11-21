@@ -1,0 +1,38 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+$padding-signup-form-vertical: 40px;
+$padding-singup-form-horizontal: 32px;
+$signup-form-header-margin-bottom: 25px;
+$padding-cta-horizontal: 60px;
+$padding-cta-vertical: 70px;
+
+.signup {
+
+    background-color: $white;
+    @include darkShadow;
+    @include borderRadiusSTD;
+
+    .signup-form {
+        padding: $padding-signup-form-vertical $padding-singup-form-horizontal;
+
+        .singup-form-header {
+            margin-bottom: $signup-form-header-margin-bottom;
+        }
+    }
+
+    .cta {
+        background-image: url(../../assets/images/cta_background.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        background-color: $blue-600;
+        @include rightBorderRadiusSTD;
+        padding: $padding-cta-vertical $padding-cta-horizontal;
+        color: $gray-100;
+
+        h1, h4 {
+            color: inherit;
+        }
+    }
+}
