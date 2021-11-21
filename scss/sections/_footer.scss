@@ -1,0 +1,33 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer-section {
+    background-color: $gray-800; 
+    padding-top: $footer-padding-top;
+    padding-bottom: $footer-padding-bottom;
+    color: $gray-100;
+    @include fontLabelSmall;
+
+    .footer-heading {
+        color: inherit;
+    }
+
+    a {
+        @include fontLabelSmall;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            font-family: inherit;
+            color: inherit;
+            font-weight: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            text-decoration: none;
+        }
+    }
+
+    .link-row {
+        margin-top: $link-row-margin-top;
+    }
+}

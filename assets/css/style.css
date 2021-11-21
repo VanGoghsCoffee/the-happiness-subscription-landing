@@ -11196,4 +11196,37 @@ textarea.form-control-lg {
   margin-bottom: 69px;
 }
 
+.footer-section {
+  background-color: #474A57;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #F4F5F7;
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.footer-section .footer-heading {
+  color: inherit;
+}
+.footer-section a {
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-decoration: none;
+  color: inherit;
+}
+.footer-section a:hover {
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+}
+.footer-section .link-row {
+  margin-top: 19px;
+}
+
 /*# sourceMappingURL=style.css.map */
