@@ -30,7 +30,13 @@ $btn-price-selection-padding-right: 5px;
     background-color: $blue;
     padding: $button-padding-vertical $button-padding-horizontal;
     @include buttonFont;
+    @include dropShadow;
     color: $white; 
+
+    &:hover {
+
+        color: $white;
+    }
 }
 
 .btn-price-selection {
