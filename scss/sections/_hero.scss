@@ -8,9 +8,17 @@
     background-position: center;
     background-repeat: no-repeat;
     padding-bottom: $hero-margin-bottom;
+    margin-top: $hero-margin-top-xsm;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        margin-top: $hero-margin-top-md;
+        text-align: left;
+    }
 
     .hero-cta {
 
         margin-top: $hero-cta-margin-top;
+        margin-bottom: $hero-cta-margin-bottom;
     }
 }

@@ -11228,7 +11228,6 @@ textarea.form-control-lg {
 
 .menu {
   background-color: #fff;
-  margin-bottom: 100px;
   height: 72px;
 }
 .menu .navbar-brand {
@@ -11257,16 +11256,25 @@ textarea.form-control-lg {
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 20px;
+  margin-top: 25px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .hero-section {
+    margin-top: 100px;
+    text-align: left;
+  }
 }
 .hero-section .hero-cta {
   margin-top: 31px;
+  margin-bottom: 25px;
 }
 
 .feature-section {
   background-image: url(../../assets/images/blue_ellipse.svg);
   background-repeat: no-repeat;
   background-size: 450px;
-  background-position: right 25px top 0;
+  background-position: right 11% top 0;
   padding-bottom: 56px;
   margin-top: 75px;
 }
