@@ -1,0 +1,30 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+$testimonial-padding-top: 67px;
+$testimonial-padding-left-right: 37px;
+$testimonial-padding-bottom: 49px;
+$testimonial-margin-bottom: 30px;
+$testimonial-quote-sign-w: 16px;
+$testimonial-quote-sign-h: 14px;
+$testimonial-quote-sign-offset-x: -20px;
+$testimonial-quote-sign-offset-y: -4px;
+
+.testimonial {
+
+    background-color: $white;
+    padding: $testimonial-padding-top $testimonial-padding-left-right $testimonial-padding-bottom $testimonial-padding-left-right;
+    margin-bottom: $testimonial-margin-bottom;
+    @include borderRadiusSTD;
+    @include darkShadow;
+
+    .testimonial-text {
+        
+        @include quote1Font;
+
+        &::before {
+
+            @include yellowQuotes($testimonial-quote-sign-w, $testimonial-quote-sign-h, $testimonial-quote-sign-offset-x, $testimonial-quote-sign-offset-y);
+        }
+    }
+}

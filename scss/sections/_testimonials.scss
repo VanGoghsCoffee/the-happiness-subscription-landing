@@ -1,0 +1,50 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+$quotes-offset-x: 94px;
+$quotes-offset-y: 66px;
+$quotes-w: 143px;
+$quotes-h: 120px;
+
+.testimonials-section {
+
+    padding-top: $section-padding-top * 0.2;
+    padding-bottom: $section-padding-bottom * 0.2;
+    background-color: rgba($yellow-300, 0.2);
+
+    @include media-breakpoint-up(md) {
+        padding-top: $section-padding-top;
+        padding-bottom: $section-padding-bottom;
+    }
+
+    .header-testimonials {
+
+        padding-left: $quotes-offset-x;
+        padding-top: $quotes-offset-y;
+
+        &::before {
+
+            @include yellowQuotes($quotes-w, $quotes-h, -$quotes-offset-x, -$quotes-offset-y);
+            z-index: -1;
+        }
+    }
+
+    .lead-testimonials {
+
+        padding-left: $quotes-offset-x;
+    }
+
+    .testimonial-2 {
+
+        @include media-breakpoint-up(lg) {
+            width: 85%;
+        }
+    }
+
+    .testimonial-3 {
+
+        @include media-breakpoint-up(lg) {
+            width: 65%;
+        }
+    }
+}

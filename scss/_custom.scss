@@ -27,6 +27,12 @@ $green-500:   $green;
 $green-400: #0DDE5D;
 $green-300: #23F272;
 
+$yellow: #FCCC19;
+$yellow-600: #E4B503;
+$yellow-500: $yellow;
+$yellow-400: #FDD541;
+$yellow-300: #FDDE6A;
+
 $font-family-sans-serif: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-serif: 'Playfair Display', serif;
 
@@ -94,8 +100,8 @@ $feature-heading-margin-bottom: 69px;
 $footer-padding-bottom: 50px;
 $footer-padding-top: 50px;
 
-$cta-section-padding-top: 100px;
-$cta-section-padding-bottom: 100px;
+$section-padding-top: 100px;
+$section-padding-bottom: 100px;
 
 $lead-1-font-size: $font-size-base * 1.125;
 $lead-1-font-weight: 400;
@@ -105,6 +111,12 @@ $font-label-small-familiy: $font-family-sans-serif;
 $font-label-small-weight: 300;
 $font-label-small-size: $font-size-base * 0.875;
 $font-label-small-line-height: 1.5;
+
+$typography-quote-1-font-family: $font-family-sans-serif;
+$typography-quote-1-font-size: $font-size-base * 1.125;
+$typography-quote-1-font-weight: 300;
+$typography-quote-1-font-style: italic;
+$typography-quote-1-line-height: 1.5;
 
 $link-row-margin-top: 19px;
 
@@ -118,6 +130,7 @@ $link-row-margin-top: 19px;
   font-family: $font-family-sans-serif;
   font-weight: 700;
 }
+
 
 .required {
   color: $red;

@@ -29,3 +29,23 @@
     font-weight: $button-font-weight;
     line-height: $button-line-height;
 }
+
+@mixin quote1Font {
+    font-family: $typography-quote-1-font-family;
+    font-size: $typography-quote-1-font-size;
+    font-weight: $typography-quote-1-font-weight;
+    font-style: $typography-quote-1-font-style;
+    linke-height: $typography-quote-1-line-height;
+}
+
+@mixin yellowQuotes($w, $h, $offset-x, $offset-y) {
+    content: " ";
+    background-image: url(../../assets/images/quote_mark.svg);
+    background-size: cover;
+    width: $w;
+    height: $h;
+    display: block;
+    position: absolute;
+    margin-left: $offset-x;
+    margin-top: $offset-y;
+}
