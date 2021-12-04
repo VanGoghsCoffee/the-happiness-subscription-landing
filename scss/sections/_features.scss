@@ -15,6 +15,10 @@
 
     .feature-heading {
 
-        margin-bottom: $feature-heading-margin-bottom;
+        margin-bottom: $feature-heading-margin-bottom * 0.2;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: $feature-heading-margin-bottom;
+        }
     }
 }

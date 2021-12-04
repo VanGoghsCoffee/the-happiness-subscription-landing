@@ -11199,6 +11199,9 @@ textarea.form-control-lg {
   background-color: #fff;
   padding: 20px 20px 30px 20px;
 }
+.feature .feature-icon {
+  font-size: 2rem;
+}
 
 .signup {
   background-color: #fff;
@@ -11309,7 +11312,12 @@ textarea.form-control-lg {
   }
 }
 .feature-section .feature-heading {
-  margin-bottom: 69px;
+  margin-bottom: 3.8px;
+}
+@media (min-width: 992px) {
+  .feature-section .feature-heading {
+    margin-bottom: 19px;
+  }
 }
 
 .cta-section {

@@ -11,4 +11,8 @@ $feature-padding-bottom: 30px;
     @include darkShadow;
     background-color: $white;
     padding: $feature-padding-top $feature-padding-horizontal $feature-padding-bottom $feature-padding-horizontal;
+
+    .feature-icon {
+        font-size: $font-size-base * 2.0;
+    }
 }
