@@ -9,7 +9,9 @@
     background-position: right 11% top 0;
     padding-bottom: $feature-section-padding-bottom;
 
-    margin-top: $feature-section-margin-top;
+    @include media-breakpoint-up(md) {
+        margin-top: $feature-section-margin-top;
+    }
 
     .feature-heading {
 

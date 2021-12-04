@@ -11276,7 +11276,11 @@ textarea.form-control-lg {
   background-size: 450px;
   background-position: right 11% top 0;
   padding-bottom: 56px;
-  margin-top: 75px;
+}
+@media (min-width: 768px) {
+  .feature-section {
+    margin-top: 75px;
+  }
 }
 .feature-section .feature-heading {
   margin-bottom: 69px;
