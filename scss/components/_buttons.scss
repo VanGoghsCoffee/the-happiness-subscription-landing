@@ -15,7 +15,7 @@ $btn-price-selection-padding-right: 5px;
         vertical-align: middle;
     }
 
-    background-color: $blue;
+    background-color: $red;
     @include dropShadow;
     @include buttonFont;
     color: $white; 
@@ -27,7 +27,7 @@ $btn-price-selection-padding-right: 5px;
 }
 
 .btn-submit {
-    background-color: $blue;
+    background-color: $red;
     padding: $button-padding-vertical $button-padding-horizontal;
     @include buttonFont;
     @include dropShadow;
