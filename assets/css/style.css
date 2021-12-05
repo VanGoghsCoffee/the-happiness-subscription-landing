@@ -11298,6 +11298,9 @@ textarea.form-control-lg {
   margin-top: 31px;
   margin-bottom: 25px;
 }
+.hero-section .app-img {
+  width: 350px;
+}
 
 .feature-section {
   background-image: url(../../assets/images/blue_ellipse.svg);
